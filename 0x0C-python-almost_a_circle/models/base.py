@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """
 
 A model that contains a Base class to manage
@@ -8,20 +9,24 @@ from Base and avoid duplicating the same code.
 
 """
 
+from os import path
+import json
+
+
 class Base:
     """
     ...
     """
-    __nb__objects = 0
 
-    def __init__(self, id=none):
+    __nb_objects = 0
 
-         """
+    def __init__(self, id=None):
+        """
         ...
         """
 
-        if id is none:
-            Base.__nb__objects += 1
-            self.id = Base,__nb__objects
+        if id is None:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
         else:
             self.id = id
