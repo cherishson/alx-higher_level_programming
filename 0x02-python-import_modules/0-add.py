@@ -2,9 +2,16 @@
 
 from add_0 import add
 
-a = 1
-b = 2
+if __name__ == "__main__":
+    """
 
-x = add(a, b)
+    Prints the result of the addition between two numbers
 
-print(f"{a} + {b} = {x}")
+    """
+
+    a = 1
+    b = 2
+
+    x = add(a, b)
+
+    print(f"{a} + {b} = {x}")
