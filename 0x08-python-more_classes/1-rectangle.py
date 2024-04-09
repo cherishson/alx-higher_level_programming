@@ -9,11 +9,19 @@ class Rectangle:
     """
         Rectangle class
 
+        Attributes:
+            width(int) : private
+            height(int) : private
+
         """
     def __init__(self, width=0, height=0):
         """
             init Rectangle class
 
+
+            Args:
+                width (int) : the width of the rectangle
+                height (int) : the height of the rectangle
             """
         self.width = width
         self.height = height
@@ -21,7 +29,9 @@ class Rectangle:
     @property
     def width(self):
         """
-            getter
+            width getter
+
+            Return: returns the value of the width in int
 
             """
         return self.__width
@@ -30,6 +40,14 @@ class Rectangle:
     def width(self, value):
         """
             width setter
+
+        Args:
+            value (int) : the value to set
+
+        raises: 
+            TypeError : when width is not an int
+            ValueError : when value is less than 0
+
 
             """
         if type(value) is not int:
@@ -41,7 +59,9 @@ class Rectangle:
     def height(self):
         """
             height getter
+            
 
+        Return: returns the height of the rectangle in int
             """
         return self.__height
 
@@ -49,6 +69,14 @@ class Rectangle:
     def height(self, value):
         """
             height setter
+
+        Aregs: 
+            value (int) : the value to set
+
+
+        raises:
+            TypeError : when width is not setr
+            ValueError : when value is less than 1
 
             """
         if type(height) is not int:
