@@ -44,7 +44,7 @@ class Rectangle:
         Args:
             value (int) : the value to set
 
-        raises: 
+        raises:
             TypeError : when width is not an int
             ValueError : when value is less than 0
 
@@ -59,7 +59,7 @@ class Rectangle:
     def height(self):
         """
             height getter
-            
+
 
         Return: returns the height of the rectangle in int
             """
@@ -70,7 +70,7 @@ class Rectangle:
         """
             height setter
 
-        Aregs: 
+        Aregs:
             value (int) : the value to set
 
 
